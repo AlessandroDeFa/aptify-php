@@ -1,0 +1,4 @@
+# Ignora tutto dentro uploads
+uploads/*
+# Configurazioni sensibili
+.env
