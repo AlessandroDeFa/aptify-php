@@ -5,13 +5,19 @@ RewriteEngine on
     Require all denied
 </FilesMatch>
 
-# Redirige /admin/auth/login a views/admin/auth/login.php
+# Reindirizza la root alla cartella public/
+RewriteRule ^$ /public/ [L]
+
+# Riscrive le richieste a /assets/* per puntare a /public/assets/*
+RewriteRule ^assets/(.*)$ /public/assets/$1 [L]
+
+# Redirige /admin/auth/login a /admin/auth/login.php
 RewriteRule ^admin/auth/login/?$ admin/auth/login.php [L]
 
-# Redirige /admin/auth/register a views/admin/auth/register.php
+# Redirige /admin/auth/register a /admin/auth/register.php
 RewriteRule ^admin/auth/register/?$ admin/auth/register.php [L]
 
-# Riscrivi URL da admin/esempio a admin/dashboard.php?page=esempio
+# Riscrivi URL da admin/page a admin/dashboard.php?page=page
 RewriteRule ^admin/([^/]+)/?$ admin/dashboard.php?page=$1 [L,QSA]
 
 # Riscrive /admin/contents/id a /admin/dashboard.php?page=edit&id=id
