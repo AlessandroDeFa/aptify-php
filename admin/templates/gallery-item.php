@@ -1,7 +1,7 @@
 <tbody data-swapy-slot="<?= $media['order'] ?>">
 <tr class="gallery-item" data-swapy-item="<?= $media['id'] ?>" >
     <td class="media">
-        <img src="<?=$fullUrl?>/aptify/public<?= $media['path'] ?>" alt="">
+        <img src="<?=$fullUrl?>/public<?= $media['path'] ?>" alt="">
     </td>
     <td class="order"><?= $media['order'] ?></td>
     <td>
