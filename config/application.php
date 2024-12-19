@@ -1,5 +1,5 @@
 <?php
 
-$applicationIdentifier = "Alessandro Spa";
+$applicationIdentifier = "Application Example";
 
 ?>
