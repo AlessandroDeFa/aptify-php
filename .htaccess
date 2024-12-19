@@ -18,4 +18,4 @@ RewriteRule ^admin/([^/]+)/?$ admin/dashboard.php?page=$1 [L,QSA]
 RewriteRule ^admin/contents/([0-9]+)/?$ admin/dashboard.php?page=edit-content&id=$1 [L,QSA]
 
 # Redirect permanente da /admin a /admin/dashboard
-RewriteRule ^admin/?$ /aptify/admin/contents [R=301,L]
+RewriteRule ^admin/?$ /admin/contents [R=301,L]
