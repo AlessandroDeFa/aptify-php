@@ -1,0 +1,21 @@
+RewriteEngine on
+
+# Blocca l'accesso a tutti i file che iniziano con un punto (es: .env, .htaccess)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Redirige /admin/auth/login a views/admin/auth/login.php
+RewriteRule ^admin/auth/login/?$ admin/auth/login.php [L]
+
+# Redirige /admin/auth/register a views/admin/auth/register.php
+RewriteRule ^admin/auth/register/?$ admin/auth/register.php [L]
+
+# Riscrivi URL da admin/esempio a admin/dashboard.php?page=esempio
+RewriteRule ^admin/([^/]+)/?$ admin/dashboard.php?page=$1 [L,QSA]
+
+# Riscrive /admin/contents/id a /admin/dashboard.php?page=edit&id=id
+RewriteRule ^admin/contents/([0-9]+)/?$ admin/dashboard.php?page=edit-content&id=$1 [L,QSA]
+
+# Redirect permanente da /admin a /admin/dashboard
+RewriteRule ^admin/?$ /aptify/admin/contents [R=301,L]

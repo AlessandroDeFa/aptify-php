@@ -1,0 +1,5 @@
+<?php
+
+$applicationIdentifier = "Alessandro Spa";
+
+?>
