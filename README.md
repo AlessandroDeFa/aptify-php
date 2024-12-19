@@ -1,5 +1,14 @@
 # System Installation and Usage Guide
 
+This project is a PHP-based admin panel designed to manage dynamic content with ease. It allows administrators to:
+
+- Create, edit, and manage dynamic content.
+- Upload and organize images in a gallery.
+- Store all data securely in a MySQL database.
+
+The admin panel provides a user-friendly interface to simplify content management and gallery creation, making it ideal for small to medium-sized projects requiring dynamic updates.
+
+---
 
 ## Prerequisites
 
