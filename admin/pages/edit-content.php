@@ -16,7 +16,7 @@ function renderMediaPreview($field_value){
         return '';
     }
     global $fullUrl;
-    $fileSrc = $fullUrl ."/aptify/public". $field_value;
+    $fileSrc = $fullUrl ."/public". $field_value;
     $filePath = __DIR__ . "/../../public". $field_value;
     $filename = basename($field_value);
     $filesize = filesize($filePath);
@@ -35,7 +35,6 @@ function renderMediaPreview($field_value){
 }
 
 function renderContentInput($field_id, $field_type, $field_name, $field_value){
-    //cambiare i nomi in italiano
     $inputs = [
         'text' => "<div class='form-input'>
                             <input type='text' id='text-$field_id' value=" . htmlspecialchars($field_value, ENT_NOQUOTES, 'UTF-8') . " placeholder='$field_name'>
@@ -70,7 +69,7 @@ function renderContentInput($field_id, $field_type, $field_name, $field_value){
         foreach ($contents as $key => $item):
         ?>
         <div class="content-link <?= $id == $item['id'] ? 'active' : ''?>">
-            <a href="<?= $fileUrl ?> /aptify/admin/contents/<?= $item['id'] ?>">
+            <a href="<?= $fileUrl ?> /admin/contents/<?= $item['id'] ?>">
                 <?= $item['name'] ?>
             </a>
         </div>
