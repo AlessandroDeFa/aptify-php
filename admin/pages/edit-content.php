@@ -37,14 +37,14 @@ function renderMediaPreview($field_value){
 function renderContentInput($field_id, $field_type, $field_name, $field_value){
     $inputs = [
         'text' => "<div class='form-input'>
-                            <input type='text' id='text-$field_id' value=" . htmlspecialchars($field_value, ENT_NOQUOTES, 'UTF-8') . " placeholder='$field_name'>
+                            <input type='text' id='text-$field_id' placeholder='$field_name' value=" . htmlspecialchars($field_value, ENT_NOQUOTES, 'UTF-8') . " >
                         </div>",
         'boolean' => "<div class='checkbox-wrapper-35'>
                             <input value='private' name='switch' id='switch-$field_id' type='checkbox' class='switch' " . ($field_value == '1' ? 'checked' : '') . ">
                             <label for='switch-$field_id'></label>
                         </div>",
         'numero' => "<div class='form-input'>
-                        <input type='number' id='numero-$field_id' value=" . htmlspecialchars($field_value, ENT_QUOTES, 'UTF-8') . " placeholder='0'>
+                        <input type='number' id='numero-$field_id' placeholder='0' value=" . htmlspecialchars($field_value, ENT_QUOTES, 'UTF-8') . " >
                     </div>",
         'richtext' => "<div class='richtext-editor' id='editor-container-$field_id'></div>",
         'media' => "<div class='drop-media' data-id='$field_id'>
