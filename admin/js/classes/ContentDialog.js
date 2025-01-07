@@ -95,6 +95,7 @@ export class ContentDialog{
       this.#selectedFieldsContainer.find('h5').show();
       this.#summary.show();
       this.#options.hide();
+      this.#backBtn.hide();
     });
   }
 
