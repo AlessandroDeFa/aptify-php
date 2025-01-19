@@ -69,3 +69,8 @@ Once the setup is complete:
 
 - Start your web server.
 - Open your browser and navigate to `/admin` (e.g., `http://yourdomain/admin`) to access the admin panel.
+
+
+# Screenshots
+<img width="1512" alt="Content Page" src="https://github.com/user-attachments/assets/38b6565d-3841-4826-bc50-c029165004f2" />
+<img width="1512" alt="Gallery Page" src="https://github.com/user-attachments/assets/11132a7b-6600-44c3-931f-9a627cb1277f" />
